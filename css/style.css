@@ -623,247 +623,247 @@
   .terminal__content-print {
     color: #bfbdbd; }
   .terminal__content--delay-2-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((2 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-2 {
     animation-delay: calc( ((2 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-3-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((3 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-3 {
     animation-delay: calc( ((3 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-4-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((4 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-4 {
     animation-delay: calc( ((4 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-5-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((5 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-5 {
     animation-delay: calc( ((5 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-6-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((6 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-6 {
     animation-delay: calc( ((6 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-7-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((7 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-7 {
     animation-delay: calc( ((7 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-8-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((8 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-8 {
     animation-delay: calc( ((8 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-9-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((9 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-9 {
     animation-delay: calc( ((9 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-10-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((10 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-10 {
     animation-delay: calc( ((10 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-11-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((11 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-11 {
     animation-delay: calc( ((11 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-12-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((12 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-12 {
     animation-delay: calc( ((12 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-13-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((13 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-13 {
     animation-delay: calc( ((13 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-14-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((14 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-14 {
     animation-delay: calc( ((14 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-15-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((15 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-15 {
     animation-delay: calc( ((15 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-16-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((16 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-16 {
     animation-delay: calc( ((16 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-17-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((17 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-17 {
     animation-delay: calc( ((17 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-18-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((18 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-18 {
     animation-delay: calc( ((18 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-19-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((19 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-19 {
     animation-delay: calc( ((19 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-20-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((20 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-20 {
     animation-delay: calc( ((20 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-21-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((21 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-21 {
     animation-delay: calc( ((21 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-22-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((22 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-22 {
     animation-delay: calc( ((22 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-23-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((23 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-23 {
     animation-delay: calc( ((23 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-24-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((24 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-24 {
     animation-delay: calc( ((24 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-25-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((25 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-25 {
     animation-delay: calc( ((25 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-26-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((26 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-26 {
     animation-delay: calc( ((26 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-27-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((27 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-27 {
     animation-delay: calc( ((27 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-28-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((28 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-28 {
     animation-delay: calc( ((28 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-29-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((29 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-29 {
     animation-delay: calc( ((29 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-30-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((30 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-30 {
     animation-delay: calc( ((30 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-31-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((31 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-31 {
     animation-delay: calc( ((31 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-32-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((32 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-32 {
     animation-delay: calc( ((32 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-33-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((33 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-33 {
     animation-delay: calc( ((33 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-34-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((34 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-34 {
     animation-delay: calc( ((34 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-35-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((35 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-35 {
     animation-delay: calc( ((35 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-36-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((36 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-36 {
     animation-delay: calc( ((36 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-37-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((37 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-37 {
     animation-delay: calc( ((37 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-38-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((38 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-38 {
     animation-delay: calc( ((38 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-39-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((39 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-39 {
     animation-delay: calc( ((39 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-40-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((40 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-40 {
     animation-delay: calc( ((40 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-41-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((41 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-41 {
     animation-delay: calc( ((41 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-42-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((42 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-42 {
     animation-delay: calc( ((42 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-43-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((43 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-43 {
     animation-delay: calc( ((43 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-44-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((44 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-44 {
     animation-delay: calc( ((44 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-45-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((45 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-45 {
     animation-delay: calc( ((45 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-46-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((46 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-46 {
     animation-delay: calc( ((46 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-47-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((47 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-47 {
     animation-delay: calc( ((47 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-48-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((48 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-48 {
     animation-delay: calc( ((48 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-49-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((49 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-49 {
     animation-delay: calc( ((49 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-50-anim {
-    animation: appear backwards;
+    animation: appear backwards 0.5s;
     animation-delay: calc( ((50 / 10) * 2 )* 1s + 1s); }
   .terminal__content--delay-50 {
     animation-delay: calc( ((50 / 10) * 2 )* 1s + 1s); }

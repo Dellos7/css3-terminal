@@ -155,7 +155,7 @@ $max-number-of-typewriter-animation-words: 50;
   **/
   @for $i from 2 through $max-number-of-typewriter-animation-words {
       &__content--delay-#{$i}-anim {
-        animation: appear backwards;
+        animation: appear backwards 0.5s;
         animation-delay: calc( ((#{$i} / 10) * 2 )* 1s + 1s);
       }
     

@@ -1,0 +1,167 @@
+//VARIABLES
+$terminal-content-background-color: #323232;
+$terminal-header-background-color: #f6f6f6;
+$terminal-header-border-color: #b8b8b8;
+$terminal-header-button-close: #fc645f;
+$terminal-header-button-minimize: #fdbe41;
+$terminal-header-button-maximize: #35cc4b;
+$terminal-font-size: 1.2;
+$terminal-primary-font-color: #fff;
+$terminal-secondary-font-color: #bfbdbd;
+$max-number-of-typewriter-animation-words: 50;
+
+//MIXINS
+/**
+* Applies the typewritter animation based on the number of words passed in as parameter
+**/
+@mixin typewriter-animation($numeroPalabras) {
+  $segs: ($numeroPalabras / 10) * 2;
+  $steps: $numeroPalabras * 2;
+  $widthEm: $numeroPalabras / 2;
+  animation: typewriter#{$numeroPalabras} calc(#{$segs}*1s - 0.2s) steps($steps) 1s 1 normal both;
+
+  //Typewriter animation
+  @keyframes typewriter#{$numeroPalabras} {
+    0% {
+      width: 0;
+    }
+    99%{
+      border-right-width: .4rem;
+    }
+    100% {
+      //Calculates 'more or less' the total width of the content based on the number of words
+      width: calc(#{$widthEm}*#{$terminal-font-size}*1em);
+      //Remove border in the end of the animation
+      border-right-width: 0;
+    }
+  }
+}
+
+//ANIMATIONS
+@keyframes appear {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.terminal {
+  font-family: Consolas,monaco,monospace;
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  position: relative;
+  font-size: calc(#{$terminal-font-size}*1rem);
+  box-shadow: 0 .5rem 2rem rgba(#000, .5);
+  
+  &__header {
+    width: calc(100% - 1px);
+    height: 1.5rem;
+    background-color: $terminal-header-background-color;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    border: .5px solid $terminal-header-border-color;
+    border-bottom: 1px solid $terminal-header-border-color;
+  }
+  
+  &__header-buttons {
+    position: relative;
+    height: 100%;
+  }
+  
+  &__header-button {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    border: .1px solid $terminal-header-border-color;
+    
+    &--close {
+      background-color: $terminal-header-button-close;
+      transform: translate( 1rem, -50% );
+    }
+    
+    &--minimize {
+      background-color: $terminal-header-button-minimize;
+      transform: translate( 2.5rem, -50% );
+    }
+    
+    &--maximize {
+      background-color: $terminal-header-button-maximize;
+      transform: translate( 4rem, -50% );
+    }
+  }
+  
+  &__content {
+      background-color: $terminal-content-background-color;
+      height: calc(100% - 1.5rem);//We remove the header height
+      border-bottom-left-radius: .3rem;
+      border-bottom-right-radius: .3rem;
+      overflow: scroll;
+  }
+  
+  //Defines a shell/command/print block
+  &__content-block {
+    padding: .5rem;
+    color: $terminal-primary-font-color;
+  }
+  
+  &__content-shell {
+    display: inline-block;
+    font-weight: bolder;
+  }
+  
+  &__content-command {
+    display: inline-block;
+    font-weight: lighter;
+    border-right: .4rem solid $terminal-secondary-font-color;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: bottom;
+    
+    /**
+    * Creates several css classes in order to use for the typewriter animations
+      Each class auto-calculates the duration, width, etc.
+      So:
+      .terminal__content-command--2 -> typewriter animation for a command with 2 words
+      ...
+      .terminal__content-command--10 -> typewriter animation for a command with 10 words
+      ...
+    **/
+    @for $i from 2 through $max-number-of-typewriter-animation-words {
+      &--#{$i} {
+        @include typewriter-animation($i);
+      } 
+    }
+  }
+  
+  &__content-print {
+    color: $terminal-secondary-font-color;
+  }
+  
+  /**
+  * We use this classes in order to make the content appear after a certain delay
+    So:
+    .terminal__content--delay-2 -> applies a delay of 2 seconds to the animation
+    .terminal__content--delay-2-anim -> applies the 'appear' animation and a delay of 2 seconds to the animation
+    ...
+    .terminal__content--delay-10 -> applies a delay of 10 seconds to the animation
+    .terminal__content--delay-10-anim -> applies the 'appear' animation and a delay of 10 seconds to the animation
+    ...
+  **/
+  @for $i from 2 through $max-number-of-typewriter-animation-words {
+      &__content--delay-#{$i}-anim {
+        animation: appear backwards;
+        animation-delay: calc( ((#{$i} / 10) * 2 )* 1s + 1s);
+      }
+    
+      &__content--delay-#{$i} {
+        animation-delay: calc( ((#{$i} / 10) * 2 )* 1s + 1s);
+      }
+  }
+  
+}

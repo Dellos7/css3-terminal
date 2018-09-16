@@ -1,0 +1,19 @@
+{
+    "name": "css3-terminal",
+    "version": "1.0.0",
+    "description": "A Terminal in CSS3 and SASS",
+    "main": "style.css",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/style.css -w",
+        "live-server": "live-server",
+        "start": "concurrently 'npm run compile:sass' 'npm run live-server'"
+    },
+    "author": "David López Castellote <david.lopez.castellote@gmail.com> (https://github.com/Dellos7)",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^4.9.3",
+        "concurrently": "^4.0.1",
+        "live-server": "^1.2.0"
+    },
+    "dependencies": {}
+}

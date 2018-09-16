@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS3 Terminal</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: #eee;
+      box-sizing: border-box;
+      font-size: 62.5%;
+    }
+
+    .wrapper {
+      width: 90%;
+      margin: 1rem auto;
+      height: 90vh;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="terminal">
+      <div class="terminal__header">
+        <div class="terminal__header-buttons">
+          <div class="terminal__header-button terminal__header-button--close">
+          </div>
+          <div class="terminal__header-button terminal__header-button--minimize">
+          </div>
+          <div class="terminal__header-button terminal__header-button--maximize">
+          </div>
+        </div>
+      </div>
+      <div class="terminal__content">
+        <div class="terminal__content-block">
+          <div class="terminal__content-shell">
+            ~ david$
+          </div>
+          <div class="terminal__content-command terminal__content-command--2">
+            ls
+          </div>
+          <div class="terminal__content-print terminal__content--delay-2-anim">
+            Desktop Documents Downloads Pictures Videos
+          </div>
+        </div>
+        <div class="terminal__content-block terminal__content--delay-3-anim">
+          <div class="terminal__content-shell">
+            ~ david$
+          </div>
+          <div class="terminal__content-command terminal__content-command--10 terminal__content--delay-3">
+            echo $USER
+          </div>
+          <div class="terminal__content-print terminal__content--delay-13-anim">
+            David López Castellote
+          </div>
+        </div>
+        <div class="terminal__content-block terminal__content--delay-14-anim">
+          <div class="terminal__content-shell">
+            ~ david$
+          </div>
+          <div class="terminal__content-command terminal__content-command--3 terminal__content--delay-14">
+            pwd
+          </div>
+          <div class="terminal__content-print terminal__content--delay-17-anim">
+            /home/david
+          </div>
+        </div>
+        <div class="terminal__content-block terminal__content--delay-18-anim">
+          <div class="terminal__content-shell">
+            ~ david$
+          </div>
+          <div class="terminal__content-command terminal__content-command--16 terminal__content--delay-18">
+            cat package.json
+          </div>
+          <div class="terminal__content-print terminal__content--delay-34-anim">
+            <pre>
+{
+  "name": "css3-terminal",
+  "version": "1.0.0",
+  "description": "A Terminal in CSS3 and SASS",
+  "main": "style.css",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "live-server": "live-server",
+    "start": "concurrently 'npm run compile:sass' 'npm run live-server'"
+  },
+  "author": "David López Castellote <david.lopez.castellote@gmail.com> (https://github.com/Dellos7)",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "concurrently": "^4.0.1",
+    "live-server": "^1.2.0"
+  },
+  "dependencies": {}
+}
+        </pre>
+          </div>
+        </div>
+        <div class="terminal__content-block terminal__content--delay-35-anim">
+          <div class="terminal__content-shell">
+            ~ david$
+          </div>
+          <div class="terminal__content-command">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -58,7 +58,8 @@
     height: calc(100% - 1.5rem);
     border-bottom-left-radius: .3rem;
     border-bottom-right-radius: .3rem;
-    overflow: scroll; }
+    overflow: scroll;
+    border-left: 0.5px solid #b8b8b8; }
   .terminal__content-block {
     padding: .5rem;
     color: #fff; }

@@ -27,11 +27,11 @@
   .main {
     width: 90%;
     margin: 1rem auto;
-    height: 80vh;
+    height: 75vh;
   }
 
   .footer {
-    height: 8vh;
+    height: 5vh;
     text-align: center;
     padding-top: 1.5rem;
   }
@@ -89,7 +89,6 @@
     }
 
     .main {
-      width: 100%;
-      margin: initial;
+      width: 99%;
     }
   }

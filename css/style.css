@@ -1,3 +1,6 @@
+/* Index that is taken into account in typewriter and delay animations, in order
+** to calculate the seconds of the animation, the steps, etc.
+*/
 /**
 * Applies the typewritter animation based on the number of words passed in as parameter
 **/
@@ -83,7 +86,7 @@
       ...
     **/ }
     .terminal__content-command--2 {
-      animation: typewriter2 calc(0.4*1s - 0.2s) steps(4) 1s 1 normal both; }
+      animation: typewriter2 calc(0.26*1s - 0.2s) steps(2) 1s 1 normal both; }
 
 @keyframes typewriter2 {
   0% {
@@ -94,7 +97,7 @@
     width: calc(1*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--3 {
-      animation: typewriter3 calc(0.6*1s - 0.2s) steps(6) 1s 1 normal both; }
+      animation: typewriter3 calc(0.39*1s - 0.2s) steps(3) 1s 1 normal both; }
 
 @keyframes typewriter3 {
   0% {
@@ -105,7 +108,7 @@
     width: calc(1.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--4 {
-      animation: typewriter4 calc(0.8*1s - 0.2s) steps(8) 1s 1 normal both; }
+      animation: typewriter4 calc(0.52*1s - 0.2s) steps(5) 1s 1 normal both; }
 
 @keyframes typewriter4 {
   0% {
@@ -116,7 +119,7 @@
     width: calc(2*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--5 {
-      animation: typewriter5 calc(1*1s - 0.2s) steps(10) 1s 1 normal both; }
+      animation: typewriter5 calc(0.65*1s - 0.2s) steps(6) 1s 1 normal both; }
 
 @keyframes typewriter5 {
   0% {
@@ -127,7 +130,7 @@
     width: calc(2.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--6 {
-      animation: typewriter6 calc(1.2*1s - 0.2s) steps(12) 1s 1 normal both; }
+      animation: typewriter6 calc(0.78*1s - 0.2s) steps(7) 1s 1 normal both; }
 
 @keyframes typewriter6 {
   0% {
@@ -138,7 +141,7 @@
     width: calc(3*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--7 {
-      animation: typewriter7 calc(1.4*1s - 0.2s) steps(14) 1s 1 normal both; }
+      animation: typewriter7 calc(0.91*1s - 0.2s) steps(9) 1s 1 normal both; }
 
 @keyframes typewriter7 {
   0% {
@@ -149,7 +152,7 @@
     width: calc(3.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--8 {
-      animation: typewriter8 calc(1.6*1s - 0.2s) steps(16) 1s 1 normal both; }
+      animation: typewriter8 calc(1.04*1s - 0.2s) steps(10) 1s 1 normal both; }
 
 @keyframes typewriter8 {
   0% {
@@ -160,7 +163,7 @@
     width: calc(4*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--9 {
-      animation: typewriter9 calc(1.8*1s - 0.2s) steps(18) 1s 1 normal both; }
+      animation: typewriter9 calc(1.17*1s - 0.2s) steps(11) 1s 1 normal both; }
 
 @keyframes typewriter9 {
   0% {
@@ -171,7 +174,7 @@
     width: calc(4.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--10 {
-      animation: typewriter10 calc(2*1s - 0.2s) steps(20) 1s 1 normal both; }
+      animation: typewriter10 calc(1.3*1s - 0.2s) steps(13) 1s 1 normal both; }
 
 @keyframes typewriter10 {
   0% {
@@ -182,7 +185,7 @@
     width: calc(5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--11 {
-      animation: typewriter11 calc(2.2*1s - 0.2s) steps(22) 1s 1 normal both; }
+      animation: typewriter11 calc(1.43*1s - 0.2s) steps(14) 1s 1 normal both; }
 
 @keyframes typewriter11 {
   0% {
@@ -193,7 +196,7 @@
     width: calc(5.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--12 {
-      animation: typewriter12 calc(2.4*1s - 0.2s) steps(24) 1s 1 normal both; }
+      animation: typewriter12 calc(1.56*1s - 0.2s) steps(15) 1s 1 normal both; }
 
 @keyframes typewriter12 {
   0% {
@@ -204,7 +207,7 @@
     width: calc(6*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--13 {
-      animation: typewriter13 calc(2.6*1s - 0.2s) steps(26) 1s 1 normal both; }
+      animation: typewriter13 calc(1.69*1s - 0.2s) steps(16) 1s 1 normal both; }
 
 @keyframes typewriter13 {
   0% {
@@ -215,7 +218,7 @@
     width: calc(6.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--14 {
-      animation: typewriter14 calc(2.8*1s - 0.2s) steps(28) 1s 1 normal both; }
+      animation: typewriter14 calc(1.82*1s - 0.2s) steps(18) 1s 1 normal both; }
 
 @keyframes typewriter14 {
   0% {
@@ -226,7 +229,7 @@
     width: calc(7*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--15 {
-      animation: typewriter15 calc(3*1s - 0.2s) steps(30) 1s 1 normal both; }
+      animation: typewriter15 calc(1.95*1s - 0.2s) steps(19) 1s 1 normal both; }
 
 @keyframes typewriter15 {
   0% {
@@ -237,7 +240,7 @@
     width: calc(7.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--16 {
-      animation: typewriter16 calc(3.2*1s - 0.2s) steps(32) 1s 1 normal both; }
+      animation: typewriter16 calc(2.08*1s - 0.2s) steps(20) 1s 1 normal both; }
 
 @keyframes typewriter16 {
   0% {
@@ -248,7 +251,7 @@
     width: calc(8*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--17 {
-      animation: typewriter17 calc(3.4*1s - 0.2s) steps(34) 1s 1 normal both; }
+      animation: typewriter17 calc(2.21*1s - 0.2s) steps(22) 1s 1 normal both; }
 
 @keyframes typewriter17 {
   0% {
@@ -259,7 +262,7 @@
     width: calc(8.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--18 {
-      animation: typewriter18 calc(3.6*1s - 0.2s) steps(36) 1s 1 normal both; }
+      animation: typewriter18 calc(2.34*1s - 0.2s) steps(23) 1s 1 normal both; }
 
 @keyframes typewriter18 {
   0% {
@@ -270,7 +273,7 @@
     width: calc(9*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--19 {
-      animation: typewriter19 calc(3.8*1s - 0.2s) steps(38) 1s 1 normal both; }
+      animation: typewriter19 calc(2.47*1s - 0.2s) steps(24) 1s 1 normal both; }
 
 @keyframes typewriter19 {
   0% {
@@ -281,7 +284,7 @@
     width: calc(9.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--20 {
-      animation: typewriter20 calc(4*1s - 0.2s) steps(40) 1s 1 normal both; }
+      animation: typewriter20 calc(2.6*1s - 0.2s) steps(26) 1s 1 normal both; }
 
 @keyframes typewriter20 {
   0% {
@@ -292,7 +295,7 @@
     width: calc(10*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--21 {
-      animation: typewriter21 calc(4.2*1s - 0.2s) steps(42) 1s 1 normal both; }
+      animation: typewriter21 calc(2.73*1s - 0.2s) steps(27) 1s 1 normal both; }
 
 @keyframes typewriter21 {
   0% {
@@ -303,7 +306,7 @@
     width: calc(10.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--22 {
-      animation: typewriter22 calc(4.4*1s - 0.2s) steps(44) 1s 1 normal both; }
+      animation: typewriter22 calc(2.86*1s - 0.2s) steps(28) 1s 1 normal both; }
 
 @keyframes typewriter22 {
   0% {
@@ -314,7 +317,7 @@
     width: calc(11*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--23 {
-      animation: typewriter23 calc(4.6*1s - 0.2s) steps(46) 1s 1 normal both; }
+      animation: typewriter23 calc(2.99*1s - 0.2s) steps(29) 1s 1 normal both; }
 
 @keyframes typewriter23 {
   0% {
@@ -325,7 +328,7 @@
     width: calc(11.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--24 {
-      animation: typewriter24 calc(4.8*1s - 0.2s) steps(48) 1s 1 normal both; }
+      animation: typewriter24 calc(3.12*1s - 0.2s) steps(31) 1s 1 normal both; }
 
 @keyframes typewriter24 {
   0% {
@@ -336,7 +339,7 @@
     width: calc(12*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--25 {
-      animation: typewriter25 calc(5*1s - 0.2s) steps(50) 1s 1 normal both; }
+      animation: typewriter25 calc(3.25*1s - 0.2s) steps(32) 1s 1 normal both; }
 
 @keyframes typewriter25 {
   0% {
@@ -347,7 +350,7 @@
     width: calc(12.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--26 {
-      animation: typewriter26 calc(5.2*1s - 0.2s) steps(52) 1s 1 normal both; }
+      animation: typewriter26 calc(3.38*1s - 0.2s) steps(33) 1s 1 normal both; }
 
 @keyframes typewriter26 {
   0% {
@@ -358,7 +361,7 @@
     width: calc(13*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--27 {
-      animation: typewriter27 calc(5.4*1s - 0.2s) steps(54) 1s 1 normal both; }
+      animation: typewriter27 calc(3.51*1s - 0.2s) steps(35) 1s 1 normal both; }
 
 @keyframes typewriter27 {
   0% {
@@ -369,7 +372,7 @@
     width: calc(13.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--28 {
-      animation: typewriter28 calc(5.6*1s - 0.2s) steps(56) 1s 1 normal both; }
+      animation: typewriter28 calc(3.64*1s - 0.2s) steps(36) 1s 1 normal both; }
 
 @keyframes typewriter28 {
   0% {
@@ -380,7 +383,7 @@
     width: calc(14*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--29 {
-      animation: typewriter29 calc(5.8*1s - 0.2s) steps(58) 1s 1 normal both; }
+      animation: typewriter29 calc(3.77*1s - 0.2s) steps(37) 1s 1 normal both; }
 
 @keyframes typewriter29 {
   0% {
@@ -391,7 +394,7 @@
     width: calc(14.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--30 {
-      animation: typewriter30 calc(6*1s - 0.2s) steps(60) 1s 1 normal both; }
+      animation: typewriter30 calc(3.9*1s - 0.2s) steps(39) 1s 1 normal both; }
 
 @keyframes typewriter30 {
   0% {
@@ -402,7 +405,7 @@
     width: calc(15*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--31 {
-      animation: typewriter31 calc(6.2*1s - 0.2s) steps(62) 1s 1 normal both; }
+      animation: typewriter31 calc(4.03*1s - 0.2s) steps(40) 1s 1 normal both; }
 
 @keyframes typewriter31 {
   0% {
@@ -413,7 +416,7 @@
     width: calc(15.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--32 {
-      animation: typewriter32 calc(6.4*1s - 0.2s) steps(64) 1s 1 normal both; }
+      animation: typewriter32 calc(4.16*1s - 0.2s) steps(41) 1s 1 normal both; }
 
 @keyframes typewriter32 {
   0% {
@@ -424,7 +427,7 @@
     width: calc(16*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--33 {
-      animation: typewriter33 calc(6.6*1s - 0.2s) steps(66) 1s 1 normal both; }
+      animation: typewriter33 calc(4.29*1s - 0.2s) steps(42) 1s 1 normal both; }
 
 @keyframes typewriter33 {
   0% {
@@ -435,7 +438,7 @@
     width: calc(16.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--34 {
-      animation: typewriter34 calc(6.8*1s - 0.2s) steps(68) 1s 1 normal both; }
+      animation: typewriter34 calc(4.42*1s - 0.2s) steps(44) 1s 1 normal both; }
 
 @keyframes typewriter34 {
   0% {
@@ -446,7 +449,7 @@
     width: calc(17*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--35 {
-      animation: typewriter35 calc(7*1s - 0.2s) steps(70) 1s 1 normal both; }
+      animation: typewriter35 calc(4.55*1s - 0.2s) steps(45) 1s 1 normal both; }
 
 @keyframes typewriter35 {
   0% {
@@ -457,7 +460,7 @@
     width: calc(17.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--36 {
-      animation: typewriter36 calc(7.2*1s - 0.2s) steps(72) 1s 1 normal both; }
+      animation: typewriter36 calc(4.68*1s - 0.2s) steps(46) 1s 1 normal both; }
 
 @keyframes typewriter36 {
   0% {
@@ -468,7 +471,7 @@
     width: calc(18*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--37 {
-      animation: typewriter37 calc(7.4*1s - 0.2s) steps(74) 1s 1 normal both; }
+      animation: typewriter37 calc(4.81*1s - 0.2s) steps(48) 1s 1 normal both; }
 
 @keyframes typewriter37 {
   0% {
@@ -479,7 +482,7 @@
     width: calc(18.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--38 {
-      animation: typewriter38 calc(7.6*1s - 0.2s) steps(76) 1s 1 normal both; }
+      animation: typewriter38 calc(4.94*1s - 0.2s) steps(49) 1s 1 normal both; }
 
 @keyframes typewriter38 {
   0% {
@@ -490,7 +493,7 @@
     width: calc(19*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--39 {
-      animation: typewriter39 calc(7.8*1s - 0.2s) steps(78) 1s 1 normal both; }
+      animation: typewriter39 calc(5.07*1s - 0.2s) steps(50) 1s 1 normal both; }
 
 @keyframes typewriter39 {
   0% {
@@ -501,7 +504,7 @@
     width: calc(19.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--40 {
-      animation: typewriter40 calc(8*1s - 0.2s) steps(80) 1s 1 normal both; }
+      animation: typewriter40 calc(5.2*1s - 0.2s) steps(52) 1s 1 normal both; }
 
 @keyframes typewriter40 {
   0% {
@@ -512,7 +515,7 @@
     width: calc(20*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--41 {
-      animation: typewriter41 calc(8.2*1s - 0.2s) steps(82) 1s 1 normal both; }
+      animation: typewriter41 calc(5.33*1s - 0.2s) steps(53) 1s 1 normal both; }
 
 @keyframes typewriter41 {
   0% {
@@ -523,7 +526,7 @@
     width: calc(20.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--42 {
-      animation: typewriter42 calc(8.4*1s - 0.2s) steps(84) 1s 1 normal both; }
+      animation: typewriter42 calc(5.46*1s - 0.2s) steps(54) 1s 1 normal both; }
 
 @keyframes typewriter42 {
   0% {
@@ -534,7 +537,7 @@
     width: calc(21*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--43 {
-      animation: typewriter43 calc(8.6*1s - 0.2s) steps(86) 1s 1 normal both; }
+      animation: typewriter43 calc(5.59*1s - 0.2s) steps(55) 1s 1 normal both; }
 
 @keyframes typewriter43 {
   0% {
@@ -545,7 +548,7 @@
     width: calc(21.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--44 {
-      animation: typewriter44 calc(8.8*1s - 0.2s) steps(88) 1s 1 normal both; }
+      animation: typewriter44 calc(5.72*1s - 0.2s) steps(57) 1s 1 normal both; }
 
 @keyframes typewriter44 {
   0% {
@@ -556,7 +559,7 @@
     width: calc(22*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--45 {
-      animation: typewriter45 calc(9*1s - 0.2s) steps(90) 1s 1 normal both; }
+      animation: typewriter45 calc(5.85*1s - 0.2s) steps(58) 1s 1 normal both; }
 
 @keyframes typewriter45 {
   0% {
@@ -567,7 +570,7 @@
     width: calc(22.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--46 {
-      animation: typewriter46 calc(9.2*1s - 0.2s) steps(92) 1s 1 normal both; }
+      animation: typewriter46 calc(5.98*1s - 0.2s) steps(59) 1s 1 normal both; }
 
 @keyframes typewriter46 {
   0% {
@@ -578,7 +581,7 @@
     width: calc(23*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--47 {
-      animation: typewriter47 calc(9.4*1s - 0.2s) steps(94) 1s 1 normal both; }
+      animation: typewriter47 calc(6.11*1s - 0.2s) steps(61) 1s 1 normal both; }
 
 @keyframes typewriter47 {
   0% {
@@ -589,7 +592,7 @@
     width: calc(23.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--48 {
-      animation: typewriter48 calc(9.6*1s - 0.2s) steps(96) 1s 1 normal both; }
+      animation: typewriter48 calc(6.24*1s - 0.2s) steps(62) 1s 1 normal both; }
 
 @keyframes typewriter48 {
   0% {
@@ -600,7 +603,7 @@
     width: calc(24*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--49 {
-      animation: typewriter49 calc(9.8*1s - 0.2s) steps(98) 1s 1 normal both; }
+      animation: typewriter49 calc(6.37*1s - 0.2s) steps(63) 1s 1 normal both; }
 
 @keyframes typewriter49 {
   0% {
@@ -611,7 +614,7 @@
     width: calc(24.5*1.2*1em);
     border-right-width: 0; } }
     .terminal__content-command--50 {
-      animation: typewriter50 calc(10*1s - 0.2s) steps(100) 1s 1 normal both; }
+      animation: typewriter50 calc(6.5*1s - 0.2s) steps(65) 1s 1 normal both; }
 
 @keyframes typewriter50 {
   0% {
@@ -625,246 +628,246 @@
     color: #bfbdbd; }
   .terminal__content--delay-2-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((2 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((2 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-2 {
-    animation-delay: calc( ((2 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((2 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-3-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((3 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((3 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-3 {
-    animation-delay: calc( ((3 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((3 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-4-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((4 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((4 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-4 {
-    animation-delay: calc( ((4 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((4 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-5-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((5 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((5 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-5 {
-    animation-delay: calc( ((5 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((5 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-6-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((6 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((6 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-6 {
-    animation-delay: calc( ((6 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((6 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-7-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((7 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((7 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-7 {
-    animation-delay: calc( ((7 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((7 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-8-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((8 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((8 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-8 {
-    animation-delay: calc( ((8 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((8 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-9-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((9 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((9 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-9 {
-    animation-delay: calc( ((9 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((9 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-10-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((10 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((10 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-10 {
-    animation-delay: calc( ((10 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((10 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-11-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((11 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((11 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-11 {
-    animation-delay: calc( ((11 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((11 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-12-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((12 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((12 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-12 {
-    animation-delay: calc( ((12 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((12 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-13-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((13 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((13 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-13 {
-    animation-delay: calc( ((13 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((13 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-14-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((14 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((14 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-14 {
-    animation-delay: calc( ((14 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((14 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-15-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((15 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((15 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-15 {
-    animation-delay: calc( ((15 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((15 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-16-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((16 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((16 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-16 {
-    animation-delay: calc( ((16 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((16 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-17-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((17 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((17 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-17 {
-    animation-delay: calc( ((17 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((17 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-18-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((18 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((18 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-18 {
-    animation-delay: calc( ((18 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((18 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-19-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((19 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((19 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-19 {
-    animation-delay: calc( ((19 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((19 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-20-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((20 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((20 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-20 {
-    animation-delay: calc( ((20 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((20 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-21-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((21 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((21 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-21 {
-    animation-delay: calc( ((21 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((21 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-22-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((22 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((22 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-22 {
-    animation-delay: calc( ((22 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((22 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-23-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((23 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((23 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-23 {
-    animation-delay: calc( ((23 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((23 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-24-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((24 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((24 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-24 {
-    animation-delay: calc( ((24 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((24 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-25-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((25 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((25 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-25 {
-    animation-delay: calc( ((25 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((25 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-26-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((26 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((26 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-26 {
-    animation-delay: calc( ((26 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((26 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-27-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((27 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((27 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-27 {
-    animation-delay: calc( ((27 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((27 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-28-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((28 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((28 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-28 {
-    animation-delay: calc( ((28 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((28 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-29-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((29 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((29 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-29 {
-    animation-delay: calc( ((29 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((29 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-30-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((30 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((30 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-30 {
-    animation-delay: calc( ((30 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((30 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-31-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((31 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((31 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-31 {
-    animation-delay: calc( ((31 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((31 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-32-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((32 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((32 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-32 {
-    animation-delay: calc( ((32 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((32 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-33-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((33 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((33 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-33 {
-    animation-delay: calc( ((33 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((33 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-34-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((34 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((34 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-34 {
-    animation-delay: calc( ((34 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((34 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-35-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((35 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((35 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-35 {
-    animation-delay: calc( ((35 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((35 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-36-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((36 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((36 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-36 {
-    animation-delay: calc( ((36 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((36 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-37-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((37 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((37 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-37 {
-    animation-delay: calc( ((37 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((37 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-38-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((38 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((38 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-38 {
-    animation-delay: calc( ((38 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((38 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-39-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((39 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((39 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-39 {
-    animation-delay: calc( ((39 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((39 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-40-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((40 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((40 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-40 {
-    animation-delay: calc( ((40 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((40 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-41-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((41 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((41 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-41 {
-    animation-delay: calc( ((41 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((41 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-42-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((42 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((42 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-42 {
-    animation-delay: calc( ((42 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((42 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-43-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((43 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((43 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-43 {
-    animation-delay: calc( ((43 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((43 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-44-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((44 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((44 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-44 {
-    animation-delay: calc( ((44 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((44 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-45-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((45 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((45 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-45 {
-    animation-delay: calc( ((45 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((45 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-46-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((46 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((46 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-46 {
-    animation-delay: calc( ((46 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((46 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-47-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((47 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((47 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-47 {
-    animation-delay: calc( ((47 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((47 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-48-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((48 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((48 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-48 {
-    animation-delay: calc( ((48 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((48 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-49-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((49 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((49 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-49 {
-    animation-delay: calc( ((49 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((49 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-50-anim {
     animation: appear backwards 0.5s;
-    animation-delay: calc( ((50 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((50 / 10) * 1.3 )* 1s + 1s); }
   .terminal__content--delay-50 {
-    animation-delay: calc( ((50 / 10) * 2 )* 1s + 1s); }
+    animation-delay: calc( ((50 / 10) * 1.3 )* 1s + 1s); }

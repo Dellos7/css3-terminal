@@ -9,14 +9,18 @@ $terminal-font-size: 1.2;
 $terminal-primary-font-color: #fff;
 $terminal-secondary-font-color: #bfbdbd;
 $max-number-of-typewriter-animation-words: 50;
+/* Index that is taken into account in typewriter and delay animations, in order
+** to calculate the seconds of the animation, the steps, etc.
+*/
+$typewriter-animation-index: 1.3;
 
 //MIXINS
 /**
 * Applies the typewritter animation based on the number of words passed in as parameter
 **/
 @mixin typewriter-animation($numeroPalabras) {
-  $segs: ($numeroPalabras / 10) * 2;
-  $steps: $numeroPalabras * 2;
+  $segs: ($numeroPalabras / 10) * $typewriter-animation-index;
+  $steps: floor($numeroPalabras * $typewriter-animation-index);
   $widthEm: $numeroPalabras / 2;
   animation: typewriter#{$numeroPalabras} calc(#{$segs}*1s - 0.2s) steps($steps) 1s 1 normal both;
 
@@ -157,11 +161,13 @@ $max-number-of-typewriter-animation-words: 50;
   @for $i from 2 through $max-number-of-typewriter-animation-words {
       &__content--delay-#{$i}-anim {
         animation: appear backwards 0.5s;
-        animation-delay: calc( ((#{$i} / 10) * 2 )* 1s + 1s);
+        //animation-delay: calc( ((#{$i} / 10) * 2 )* 1s + 1s);
+        animation-delay: calc( ((#{$i} / 10) * #{$typewriter-animation-index} )* 1s + 1s);
       }
     
       &__content--delay-#{$i} {
-        animation-delay: calc( ((#{$i} / 10) * 2 )* 1s + 1s);
+        //animation-delay: calc( ((#{$i} / 10) * 2 )* 1s + 1s);
+        animation-delay: calc( ((#{$i} / 10) * #{$typewriter-animation-index} )* 1s + 1s);
       }
   }
   

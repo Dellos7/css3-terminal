@@ -14,3 +14,9 @@ cd css3-terminal
 npm install
 npm start
 ```
+
+## TODOs
+
+* Convert it into a web component
+* Use of CSS variables
+* Maybe use of Shadow DOM

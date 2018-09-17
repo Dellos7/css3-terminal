@@ -3,30 +3,19 @@
 
 <head>
   <title>CSS3 Terminal</title>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-
-    body {
-      background-color: #eee;
-      box-sizing: border-box;
-      font-size: 10%;
-    }
-
-    .wrapper {
-      width: 90%;
-      margin: 1rem auto;
-      height: 90vh;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/terminal.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <div class="wrapper">
+  <header class="header">
+    <div class="github-project"><div class="link-item"><a href="https://github.com/Dellos7/css3-terminal" target="_blank">See in Github</a></div></div>
+  </header>
+
+  <main class="main">
     <div class="terminal">
       <div class="terminal__header">
         <div class="terminal__header-buttons">
@@ -111,7 +100,16 @@
         </div>
       </div>
     </div>
-  </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__author">Follow David López Castellote:</p>
+    <ul class="footer__navigation">
+      <li class="link-item"><a href="https://github.com/Dellos7" target="_blank">Github</a></li>
+      <li class="link-item"><a href="https://twitter.com/_dlopezcast" target="_blank">Twitter</a></li>
+      <li class="link-item"><a href="https://www.linkedin.com/in/david-lopez-castellote/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </footer>
 
 </body>
 

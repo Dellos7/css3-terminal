@@ -2,9 +2,9 @@
     "name": "css3-terminal",
     "version": "1.0.0",
     "description": "A Terminal in CSS3 and SASS",
-    "main": "style.css",
+    "main": "terminal.css",
     "scripts": {
-        "compile:sass": "node-sass sass/main.scss css/style.css -w",
+        "compile:sass": "node-sass sass/main.scss css/terminal.css -w",
         "live-server": "live-server",
         "start": "concurrently 'npm run compile:sass' 'npm run live-server'"
     },

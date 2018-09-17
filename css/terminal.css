@@ -1,0 +1,874 @@
+/* Index that is taken into account in typewriter and delay animations, in order
+** to calculate the seconds of the animation, the steps, etc.
+*/
+/**
+* Applies the typewritter animation based on the number of words passed in as parameter
+**/
+@keyframes appear {
+  0% {
+    visibility: hidden; }
+  100% {
+    visibility: visible; } }
+
+.terminal {
+  font-family: Consolas,monaco,monospace;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  position: relative;
+  font-size: calc(1.8*1rem);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5);
+  /**
+  * We use this classes in order to make the content appear after a certain delay
+    So:
+    .terminal__content--delay-2 -> applies a delay of 2 seconds to the animation
+    .terminal__content--delay-2-anim -> applies the 'appear' animation and a delay of 2 seconds to the animation
+    ...
+    .terminal__content--delay-10 -> applies a delay of 10 seconds to the animation
+    .terminal__content--delay-10-anim -> applies the 'appear' animation and a delay of 10 seconds to the animation
+    ...
+  **/ }
+  .terminal__header {
+    width: calc(100% - 1px);
+    height: 3rem;
+    background-color: #f6f6f6;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    border: 0.5px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8; }
+  .terminal__header-buttons {
+    position: relative;
+    height: 100%; }
+  .terminal__header-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    border: 0.1px solid #b8b8b8; }
+    .terminal__header-button--close {
+      background-color: #fc645f;
+      transform: translate(1rem, -50%); }
+    .terminal__header-button--minimize {
+      background-color: #fdbe41;
+      transform: translate(3rem, -50%); }
+    .terminal__header-button--maximize {
+      background-color: #35cc4b;
+      transform: translate(5rem, -50%); }
+  .terminal__content {
+    background-color: #323232;
+    height: calc(100% - 3rem);
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    overflow: scroll;
+    border-left: 0.5px solid #b8b8b8; }
+  .terminal__content-block {
+    padding: .5rem;
+    color: #fff; }
+  .terminal__content-shell {
+    display: inline-block;
+    font-weight: bolder; }
+  .terminal__content-command {
+    display: inline-block;
+    font-weight: lighter;
+    border-right: 0.4rem solid #bfbdbd;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: bottom;
+    /**
+    * Creates several css classes in order to use for the typewriter animations
+      Each class auto-calculates the duration, width, etc.
+      So:
+      .terminal__content-command--2 -> typewriter animation for a command with 2 words
+      ...
+      .terminal__content-command--10 -> typewriter animation for a command with 10 words
+      ...
+    **/ }
+    .terminal__content-command--2 {
+      animation: typewriter2 calc(0.26*1s - 0.2s) steps(2) 1s 1 normal both; }
+
+@keyframes typewriter2 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(0.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--3 {
+      animation: typewriter3 calc(0.39*1s - 0.2s) steps(3) 1s 1 normal both; }
+
+@keyframes typewriter3 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(1.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--4 {
+      animation: typewriter4 calc(0.52*1s - 0.2s) steps(5) 1s 1 normal both; }
+
+@keyframes typewriter4 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(1.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--5 {
+      animation: typewriter5 calc(0.65*1s - 0.2s) steps(6) 1s 1 normal both; }
+
+@keyframes typewriter5 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(1.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--6 {
+      animation: typewriter6 calc(0.78*1s - 0.2s) steps(7) 1s 1 normal both; }
+
+@keyframes typewriter6 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(2.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--7 {
+      animation: typewriter7 calc(0.91*1s - 0.2s) steps(9) 1s 1 normal both; }
+
+@keyframes typewriter7 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(2.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--8 {
+      animation: typewriter8 calc(1.04*1s - 0.2s) steps(10) 1s 1 normal both; }
+
+@keyframes typewriter8 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(2.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--9 {
+      animation: typewriter9 calc(1.17*1s - 0.2s) steps(11) 1s 1 normal both; }
+
+@keyframes typewriter9 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(3.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--10 {
+      animation: typewriter10 calc(1.3*1s - 0.2s) steps(13) 1s 1 normal both; }
+
+@keyframes typewriter10 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(3.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--11 {
+      animation: typewriter11 calc(1.43*1s - 0.2s) steps(14) 1s 1 normal both; }
+
+@keyframes typewriter11 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(3.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--12 {
+      animation: typewriter12 calc(1.56*1s - 0.2s) steps(15) 1s 1 normal both; }
+
+@keyframes typewriter12 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(4.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--13 {
+      animation: typewriter13 calc(1.69*1s - 0.2s) steps(16) 1s 1 normal both; }
+
+@keyframes typewriter13 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(4.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--14 {
+      animation: typewriter14 calc(1.82*1s - 0.2s) steps(18) 1s 1 normal both; }
+
+@keyframes typewriter14 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(4.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--15 {
+      animation: typewriter15 calc(1.95*1s - 0.2s) steps(19) 1s 1 normal both; }
+
+@keyframes typewriter15 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(5.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--16 {
+      animation: typewriter16 calc(2.08*1s - 0.2s) steps(20) 1s 1 normal both; }
+
+@keyframes typewriter16 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(5.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--17 {
+      animation: typewriter17 calc(2.21*1s - 0.2s) steps(22) 1s 1 normal both; }
+
+@keyframes typewriter17 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(5.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--18 {
+      animation: typewriter18 calc(2.34*1s - 0.2s) steps(23) 1s 1 normal both; }
+
+@keyframes typewriter18 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(6.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--19 {
+      animation: typewriter19 calc(2.47*1s - 0.2s) steps(24) 1s 1 normal both; }
+
+@keyframes typewriter19 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(6.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--20 {
+      animation: typewriter20 calc(2.6*1s - 0.2s) steps(26) 1s 1 normal both; }
+
+@keyframes typewriter20 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(6.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--21 {
+      animation: typewriter21 calc(2.73*1s - 0.2s) steps(27) 1s 1 normal both; }
+
+@keyframes typewriter21 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(7.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--22 {
+      animation: typewriter22 calc(2.86*1s - 0.2s) steps(28) 1s 1 normal both; }
+
+@keyframes typewriter22 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(7.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--23 {
+      animation: typewriter23 calc(2.99*1s - 0.2s) steps(29) 1s 1 normal both; }
+
+@keyframes typewriter23 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(7.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--24 {
+      animation: typewriter24 calc(3.12*1s - 0.2s) steps(31) 1s 1 normal both; }
+
+@keyframes typewriter24 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(8.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--25 {
+      animation: typewriter25 calc(3.25*1s - 0.2s) steps(32) 1s 1 normal both; }
+
+@keyframes typewriter25 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(8.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--26 {
+      animation: typewriter26 calc(3.38*1s - 0.2s) steps(33) 1s 1 normal both; }
+
+@keyframes typewriter26 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(8.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--27 {
+      animation: typewriter27 calc(3.51*1s - 0.2s) steps(35) 1s 1 normal both; }
+
+@keyframes typewriter27 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(9.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--28 {
+      animation: typewriter28 calc(3.64*1s - 0.2s) steps(36) 1s 1 normal both; }
+
+@keyframes typewriter28 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(9.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--29 {
+      animation: typewriter29 calc(3.77*1s - 0.2s) steps(37) 1s 1 normal both; }
+
+@keyframes typewriter29 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(9.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--30 {
+      animation: typewriter30 calc(3.9*1s - 0.2s) steps(39) 1s 1 normal both; }
+
+@keyframes typewriter30 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(10.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--31 {
+      animation: typewriter31 calc(4.03*1s - 0.2s) steps(40) 1s 1 normal both; }
+
+@keyframes typewriter31 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(10.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--32 {
+      animation: typewriter32 calc(4.16*1s - 0.2s) steps(41) 1s 1 normal both; }
+
+@keyframes typewriter32 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(10.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--33 {
+      animation: typewriter33 calc(4.29*1s - 0.2s) steps(42) 1s 1 normal both; }
+
+@keyframes typewriter33 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(11.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--34 {
+      animation: typewriter34 calc(4.42*1s - 0.2s) steps(44) 1s 1 normal both; }
+
+@keyframes typewriter34 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(11.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--35 {
+      animation: typewriter35 calc(4.55*1s - 0.2s) steps(45) 1s 1 normal both; }
+
+@keyframes typewriter35 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(11.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--36 {
+      animation: typewriter36 calc(4.68*1s - 0.2s) steps(46) 1s 1 normal both; }
+
+@keyframes typewriter36 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(12.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--37 {
+      animation: typewriter37 calc(4.81*1s - 0.2s) steps(48) 1s 1 normal both; }
+
+@keyframes typewriter37 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(12.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--38 {
+      animation: typewriter38 calc(4.94*1s - 0.2s) steps(49) 1s 1 normal both; }
+
+@keyframes typewriter38 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(12.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--39 {
+      animation: typewriter39 calc(5.07*1s - 0.2s) steps(50) 1s 1 normal both; }
+
+@keyframes typewriter39 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(13.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--40 {
+      animation: typewriter40 calc(5.2*1s - 0.2s) steps(52) 1s 1 normal both; }
+
+@keyframes typewriter40 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(13.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--41 {
+      animation: typewriter41 calc(5.33*1s - 0.2s) steps(53) 1s 1 normal both; }
+
+@keyframes typewriter41 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(13.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--42 {
+      animation: typewriter42 calc(5.46*1s - 0.2s) steps(54) 1s 1 normal both; }
+
+@keyframes typewriter42 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(14.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--43 {
+      animation: typewriter43 calc(5.59*1s - 0.2s) steps(55) 1s 1 normal both; }
+
+@keyframes typewriter43 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(14.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--44 {
+      animation: typewriter44 calc(5.72*1s - 0.2s) steps(57) 1s 1 normal both; }
+
+@keyframes typewriter44 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(14.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--45 {
+      animation: typewriter45 calc(5.85*1s - 0.2s) steps(58) 1s 1 normal both; }
+
+@keyframes typewriter45 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(15.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--46 {
+      animation: typewriter46 calc(5.98*1s - 0.2s) steps(59) 1s 1 normal both; }
+
+@keyframes typewriter46 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(15.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--47 {
+      animation: typewriter47 calc(6.11*1s - 0.2s) steps(61) 1s 1 normal both; }
+
+@keyframes typewriter47 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(15.86667*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--48 {
+      animation: typewriter48 calc(6.24*1s - 0.2s) steps(62) 1s 1 normal both; }
+
+@keyframes typewriter48 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(16.2*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--49 {
+      animation: typewriter49 calc(6.37*1s - 0.2s) steps(63) 1s 1 normal both; }
+
+@keyframes typewriter49 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(16.53333*1.8*1em);
+    border-right-width: 0; } }
+    .terminal__content-command--50 {
+      animation: typewriter50 calc(6.5*1s - 0.2s) steps(65) 1s 1 normal both; }
+
+@keyframes typewriter50 {
+  0% {
+    width: 0; }
+  99% {
+    border-right-width: .4rem; }
+  100% {
+    width: calc(16.86667*1.8*1em);
+    border-right-width: 0; } }
+  .terminal__content-print {
+    color: #bfbdbd; }
+  .terminal__content--delay-2-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((2 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-2 {
+    animation-delay: calc( ((2 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-3-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((3 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-3 {
+    animation-delay: calc( ((3 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-4-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((4 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-4 {
+    animation-delay: calc( ((4 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-5-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((5 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-5 {
+    animation-delay: calc( ((5 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-6-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((6 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-6 {
+    animation-delay: calc( ((6 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-7-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((7 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-7 {
+    animation-delay: calc( ((7 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-8-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((8 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-8 {
+    animation-delay: calc( ((8 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-9-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((9 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-9 {
+    animation-delay: calc( ((9 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-10-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((10 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-10 {
+    animation-delay: calc( ((10 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-11-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((11 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-11 {
+    animation-delay: calc( ((11 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-12-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((12 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-12 {
+    animation-delay: calc( ((12 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-13-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((13 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-13 {
+    animation-delay: calc( ((13 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-14-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((14 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-14 {
+    animation-delay: calc( ((14 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-15-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((15 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-15 {
+    animation-delay: calc( ((15 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-16-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((16 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-16 {
+    animation-delay: calc( ((16 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-17-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((17 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-17 {
+    animation-delay: calc( ((17 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-18-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((18 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-18 {
+    animation-delay: calc( ((18 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-19-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((19 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-19 {
+    animation-delay: calc( ((19 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-20-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((20 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-20 {
+    animation-delay: calc( ((20 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-21-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((21 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-21 {
+    animation-delay: calc( ((21 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-22-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((22 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-22 {
+    animation-delay: calc( ((22 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-23-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((23 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-23 {
+    animation-delay: calc( ((23 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-24-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((24 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-24 {
+    animation-delay: calc( ((24 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-25-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((25 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-25 {
+    animation-delay: calc( ((25 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-26-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((26 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-26 {
+    animation-delay: calc( ((26 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-27-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((27 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-27 {
+    animation-delay: calc( ((27 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-28-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((28 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-28 {
+    animation-delay: calc( ((28 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-29-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((29 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-29 {
+    animation-delay: calc( ((29 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-30-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((30 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-30 {
+    animation-delay: calc( ((30 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-31-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((31 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-31 {
+    animation-delay: calc( ((31 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-32-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((32 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-32 {
+    animation-delay: calc( ((32 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-33-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((33 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-33 {
+    animation-delay: calc( ((33 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-34-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((34 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-34 {
+    animation-delay: calc( ((34 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-35-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((35 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-35 {
+    animation-delay: calc( ((35 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-36-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((36 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-36 {
+    animation-delay: calc( ((36 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-37-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((37 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-37 {
+    animation-delay: calc( ((37 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-38-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((38 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-38 {
+    animation-delay: calc( ((38 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-39-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((39 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-39 {
+    animation-delay: calc( ((39 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-40-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((40 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-40 {
+    animation-delay: calc( ((40 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-41-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((41 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-41 {
+    animation-delay: calc( ((41 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-42-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((42 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-42 {
+    animation-delay: calc( ((42 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-43-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((43 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-43 {
+    animation-delay: calc( ((43 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-44-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((44 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-44 {
+    animation-delay: calc( ((44 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-45-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((45 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-45 {
+    animation-delay: calc( ((45 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-46-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((46 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-46 {
+    animation-delay: calc( ((46 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-47-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((47 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-47 {
+    animation-delay: calc( ((47 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-48-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((48 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-48 {
+    animation-delay: calc( ((48 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-49-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((49 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-49 {
+    animation-delay: calc( ((49 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-50-anim {
+    animation: appear backwards 0.5s;
+    animation-delay: calc( ((50 / 10) * 1.3 )* 1s + 1s); }
+  .terminal__content--delay-50 {
+    animation-delay: calc( ((50 / 10) * 1.3 )* 1s + 1s); }

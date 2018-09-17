@@ -17,7 +17,7 @@
   height: 100%;
   border-radius: .5rem;
   position: relative;
-  font-size: calc(1.6*1rem);
+  font-size: calc(1.8*1rem);
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5);
   /**
   * We use this classes in order to make the content appear after a certain delay
@@ -95,7 +95,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(1.06667*1.6*1em);
+    width: calc(0.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--3 {
       animation: typewriter3 calc(0.39*1s - 0.2s) steps(3) 1s 1 normal both; }
@@ -106,7 +106,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(1.4*1.6*1em);
+    width: calc(1.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--4 {
       animation: typewriter4 calc(0.52*1s - 0.2s) steps(5) 1s 1 normal both; }
@@ -117,7 +117,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(1.73333*1.6*1em);
+    width: calc(1.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--5 {
       animation: typewriter5 calc(0.65*1s - 0.2s) steps(6) 1s 1 normal both; }
@@ -128,7 +128,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(2.06667*1.6*1em);
+    width: calc(1.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--6 {
       animation: typewriter6 calc(0.78*1s - 0.2s) steps(7) 1s 1 normal both; }
@@ -139,7 +139,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(2.4*1.6*1em);
+    width: calc(2.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--7 {
       animation: typewriter7 calc(0.91*1s - 0.2s) steps(9) 1s 1 normal both; }
@@ -150,7 +150,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(2.73333*1.6*1em);
+    width: calc(2.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--8 {
       animation: typewriter8 calc(1.04*1s - 0.2s) steps(10) 1s 1 normal both; }
@@ -161,7 +161,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(3.06667*1.6*1em);
+    width: calc(2.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--9 {
       animation: typewriter9 calc(1.17*1s - 0.2s) steps(11) 1s 1 normal both; }
@@ -172,7 +172,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(3.4*1.6*1em);
+    width: calc(3.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--10 {
       animation: typewriter10 calc(1.3*1s - 0.2s) steps(13) 1s 1 normal both; }
@@ -183,7 +183,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(3.73333*1.6*1em);
+    width: calc(3.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--11 {
       animation: typewriter11 calc(1.43*1s - 0.2s) steps(14) 1s 1 normal both; }
@@ -194,7 +194,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(4.06667*1.6*1em);
+    width: calc(3.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--12 {
       animation: typewriter12 calc(1.56*1s - 0.2s) steps(15) 1s 1 normal both; }
@@ -205,7 +205,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(4.4*1.6*1em);
+    width: calc(4.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--13 {
       animation: typewriter13 calc(1.69*1s - 0.2s) steps(16) 1s 1 normal both; }
@@ -216,7 +216,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(4.73333*1.6*1em);
+    width: calc(4.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--14 {
       animation: typewriter14 calc(1.82*1s - 0.2s) steps(18) 1s 1 normal both; }
@@ -227,7 +227,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(5.06667*1.6*1em);
+    width: calc(4.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--15 {
       animation: typewriter15 calc(1.95*1s - 0.2s) steps(19) 1s 1 normal both; }
@@ -238,7 +238,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(5.4*1.6*1em);
+    width: calc(5.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--16 {
       animation: typewriter16 calc(2.08*1s - 0.2s) steps(20) 1s 1 normal both; }
@@ -249,7 +249,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(5.73333*1.6*1em);
+    width: calc(5.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--17 {
       animation: typewriter17 calc(2.21*1s - 0.2s) steps(22) 1s 1 normal both; }
@@ -260,7 +260,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(6.06667*1.6*1em);
+    width: calc(5.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--18 {
       animation: typewriter18 calc(2.34*1s - 0.2s) steps(23) 1s 1 normal both; }
@@ -271,7 +271,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(6.4*1.6*1em);
+    width: calc(6.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--19 {
       animation: typewriter19 calc(2.47*1s - 0.2s) steps(24) 1s 1 normal both; }
@@ -282,7 +282,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(6.73333*1.6*1em);
+    width: calc(6.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--20 {
       animation: typewriter20 calc(2.6*1s - 0.2s) steps(26) 1s 1 normal both; }
@@ -293,7 +293,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(7.06667*1.6*1em);
+    width: calc(6.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--21 {
       animation: typewriter21 calc(2.73*1s - 0.2s) steps(27) 1s 1 normal both; }
@@ -304,7 +304,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(7.4*1.6*1em);
+    width: calc(7.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--22 {
       animation: typewriter22 calc(2.86*1s - 0.2s) steps(28) 1s 1 normal both; }
@@ -315,7 +315,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(7.73333*1.6*1em);
+    width: calc(7.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--23 {
       animation: typewriter23 calc(2.99*1s - 0.2s) steps(29) 1s 1 normal both; }
@@ -326,7 +326,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(8.06667*1.6*1em);
+    width: calc(7.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--24 {
       animation: typewriter24 calc(3.12*1s - 0.2s) steps(31) 1s 1 normal both; }
@@ -337,7 +337,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(8.4*1.6*1em);
+    width: calc(8.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--25 {
       animation: typewriter25 calc(3.25*1s - 0.2s) steps(32) 1s 1 normal both; }
@@ -348,7 +348,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(8.73333*1.6*1em);
+    width: calc(8.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--26 {
       animation: typewriter26 calc(3.38*1s - 0.2s) steps(33) 1s 1 normal both; }
@@ -359,7 +359,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(9.06667*1.6*1em);
+    width: calc(8.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--27 {
       animation: typewriter27 calc(3.51*1s - 0.2s) steps(35) 1s 1 normal both; }
@@ -370,7 +370,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(9.4*1.6*1em);
+    width: calc(9.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--28 {
       animation: typewriter28 calc(3.64*1s - 0.2s) steps(36) 1s 1 normal both; }
@@ -381,7 +381,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(9.73333*1.6*1em);
+    width: calc(9.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--29 {
       animation: typewriter29 calc(3.77*1s - 0.2s) steps(37) 1s 1 normal both; }
@@ -392,7 +392,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(10.06667*1.6*1em);
+    width: calc(9.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--30 {
       animation: typewriter30 calc(3.9*1s - 0.2s) steps(39) 1s 1 normal both; }
@@ -403,7 +403,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(10.4*1.6*1em);
+    width: calc(10.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--31 {
       animation: typewriter31 calc(4.03*1s - 0.2s) steps(40) 1s 1 normal both; }
@@ -414,7 +414,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(10.73333*1.6*1em);
+    width: calc(10.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--32 {
       animation: typewriter32 calc(4.16*1s - 0.2s) steps(41) 1s 1 normal both; }
@@ -425,7 +425,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(11.06667*1.6*1em);
+    width: calc(10.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--33 {
       animation: typewriter33 calc(4.29*1s - 0.2s) steps(42) 1s 1 normal both; }
@@ -436,7 +436,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(11.4*1.6*1em);
+    width: calc(11.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--34 {
       animation: typewriter34 calc(4.42*1s - 0.2s) steps(44) 1s 1 normal both; }
@@ -447,7 +447,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(11.73333*1.6*1em);
+    width: calc(11.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--35 {
       animation: typewriter35 calc(4.55*1s - 0.2s) steps(45) 1s 1 normal both; }
@@ -458,7 +458,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(12.06667*1.6*1em);
+    width: calc(11.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--36 {
       animation: typewriter36 calc(4.68*1s - 0.2s) steps(46) 1s 1 normal both; }
@@ -469,7 +469,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(12.4*1.6*1em);
+    width: calc(12.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--37 {
       animation: typewriter37 calc(4.81*1s - 0.2s) steps(48) 1s 1 normal both; }
@@ -480,7 +480,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(12.73333*1.6*1em);
+    width: calc(12.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--38 {
       animation: typewriter38 calc(4.94*1s - 0.2s) steps(49) 1s 1 normal both; }
@@ -491,7 +491,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(13.06667*1.6*1em);
+    width: calc(12.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--39 {
       animation: typewriter39 calc(5.07*1s - 0.2s) steps(50) 1s 1 normal both; }
@@ -502,7 +502,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(13.4*1.6*1em);
+    width: calc(13.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--40 {
       animation: typewriter40 calc(5.2*1s - 0.2s) steps(52) 1s 1 normal both; }
@@ -513,7 +513,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(13.73333*1.6*1em);
+    width: calc(13.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--41 {
       animation: typewriter41 calc(5.33*1s - 0.2s) steps(53) 1s 1 normal both; }
@@ -524,7 +524,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(14.06667*1.6*1em);
+    width: calc(13.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--42 {
       animation: typewriter42 calc(5.46*1s - 0.2s) steps(54) 1s 1 normal both; }
@@ -535,7 +535,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(14.4*1.6*1em);
+    width: calc(14.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--43 {
       animation: typewriter43 calc(5.59*1s - 0.2s) steps(55) 1s 1 normal both; }
@@ -546,7 +546,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(14.73333*1.6*1em);
+    width: calc(14.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--44 {
       animation: typewriter44 calc(5.72*1s - 0.2s) steps(57) 1s 1 normal both; }
@@ -557,7 +557,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(15.06667*1.6*1em);
+    width: calc(14.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--45 {
       animation: typewriter45 calc(5.85*1s - 0.2s) steps(58) 1s 1 normal both; }
@@ -568,7 +568,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(15.4*1.6*1em);
+    width: calc(15.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--46 {
       animation: typewriter46 calc(5.98*1s - 0.2s) steps(59) 1s 1 normal both; }
@@ -579,7 +579,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(15.73333*1.6*1em);
+    width: calc(15.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--47 {
       animation: typewriter47 calc(6.11*1s - 0.2s) steps(61) 1s 1 normal both; }
@@ -590,7 +590,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(16.06667*1.6*1em);
+    width: calc(15.86667*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--48 {
       animation: typewriter48 calc(6.24*1s - 0.2s) steps(62) 1s 1 normal both; }
@@ -601,7 +601,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(16.4*1.6*1em);
+    width: calc(16.2*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--49 {
       animation: typewriter49 calc(6.37*1s - 0.2s) steps(63) 1s 1 normal both; }
@@ -612,7 +612,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(16.73333*1.6*1em);
+    width: calc(16.53333*1.8*1em);
     border-right-width: 0; } }
     .terminal__content-command--50 {
       animation: typewriter50 calc(6.5*1s - 0.2s) steps(65) 1s 1 normal both; }
@@ -623,7 +623,7 @@
   99% {
     border-right-width: .4rem; }
   100% {
-    width: calc(17.06667*1.6*1em);
+    width: calc(16.86667*1.8*1em);
     border-right-width: 0; } }
   .terminal__content-print {
     color: #bfbdbd; }

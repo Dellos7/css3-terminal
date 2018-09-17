@@ -27,7 +27,7 @@
   .main {
     width: 90%;
     margin: 1rem auto;
-    height: 75vh;
+    height: 80vh;
   }
 
   .footer {
@@ -78,7 +78,8 @@
     visibility: visible;
   }
 
-  .link-item a:active, .link-item a:link, .link-item a:visited {
+  .link-item a:link, 
+  .link-item a:visited {
     text-decoration: none;
     color: inherit;
   }
